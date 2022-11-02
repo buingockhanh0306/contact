@@ -118,6 +118,10 @@ html {
 .card-number {
   display: flex;
   gap: 10px;
+  text-decoration: none;
+}
+.card-number :active {
+  color: #679c75;
 }
 .card-number i {
   color: blue;
