@@ -98,8 +98,8 @@ html {
 }
 
 .active {
-  padding: 40px 0;
-  height: 85vh;
+  padding-top: 40px;
+  height: 65vh;
 }
 .bank img {
   width: 30%;
