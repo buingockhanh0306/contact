@@ -1,0 +1,145 @@
+:root {
+  --bgrColor1: #679c75;
+  --bgrColor2: #5e7cbd;
+  --textColorW: #fff;
+  --textColor: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+.container {
+  background-image: url("../image/bgr.jpg");
+  background-repeat: no-repeat;
+  /* filter: blur(8px);
+  -webkit-filter: blur(6px); */
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+}
+.border-image {
+}
+.boder-image img {
+  border: 2px solid #6edd1e;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+.name {
+  color: var(--textColorW);
+  font-size: 2.4rem;
+  margin: 30px 0;
+  font-weight: 700;
+}
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-item {
+  display: flex;
+  margin: 8px 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  width: 80%;
+  align-items: center;
+  justify-content: start;
+  padding: 16px 10px;
+  border-radius: 16px;
+  color: var(--textColorW);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: var(--colorSocial);
+}
+.contact-item:active {
+  color: var(--textColor);
+}
+.contact-item i {
+}
+.contact-item span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.5;
+}
+.bank {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: -10%;
+  border-radius: 8%;
+  background-color: #fff;
+  /* background-image: url("../image/bgrCoin.jpg");
+  background-position: center; */
+  height: 0;
+  width: 100vw;
+  padding: 40px 0;
+  transition: all ease-in-out 0.3s;
+}
+.active {
+  height: 60vh;
+}
+.bank img {
+  width: 30%;
+}
+.bank-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  gap: 8px;
+}
+.author {
+  font-weight: 700;
+}
+.card-number {
+}
+.card-number i {
+  color: blue;
+}
+.qr-img {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  gap: 8px;
+  width: 40%;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.qr-img img {
+  width: 100%;
+}
+.bank-btn {
+  margin-top: 40px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background-color: #679c75;
+  color: #fff;
+}

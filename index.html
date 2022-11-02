@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="boder-image">
+        <img src="./assets/image/bgr.jpg" alt="" />
+      </div>
+      <div class="name">Something</div>
+      <div class="contact">
+        <a
+          href="tel:0981415813"
+          class="contact-item"
+          target="_blank"
+          style="--colorSocial: #00a14f"
+        >
+          <i class="fa-solid fa-phone"></i>
+          <span>Call</span>
+        </a>
+
+        <a
+          href="https://facebook.com/Buikhanhi2k"
+          class="contact-item"
+          target="_blank"
+          style="--colorSocial: #1873eb"
+        >
+          <i class="fa-brands fa-facebook-f"></i>
+          <span>Facebook</span>
+        </a>
+
+        <a
+          href="mailto:buikhanhi2k@gmail.com"
+          class="contact-item"
+          target="_blank"
+          style="--colorSocial: #c54a39"
+        >
+          <i class="fa-solid fa-envelope"></i>
+          <span>Gmail</span>
+        </a>
+
+        <a
+          href="https://github.com/buingockhanh0306/"
+          class="contact-item"
+          target="_blank"
+          style="--colorSocial: #000"
+        >
+          <i class="fa-brands fa-github"></i>
+          <span>Github</span>
+        </a>
+
+        <a
+          onclick="openBank()"
+          class="contact-item"
+          target="_blank"
+          style="--colorSocial: #1873eb"
+        >
+          <i class="fa-solid fa-building-columns"></i>
+          <span>Something</span>
+        </a>
+      </div>
+      <div class="modal" onclick="closeBank()"></div>
+
+      <div class="bank">
+        <div class="bank-text">
+          <span>Lorem ipsum dolor sit amet</span>
+          <span class="author">Name Name name</span>
+          <div class="card-number">
+            <span id="copy" class="number">0123456456</span>
+            <i onclick="copyClipboard()" class="fa-regular fa-clipboard"></i>
+          </div>
+        </div>
+
+        <div class="qr-img">
+          <img src="./assets/image/qr.jpg" alt="" />
+          <img src="./assets/image/Techcombank.png" alt="" />
+        </div>
+        <button class="bank-btn" onclick="closeBank()">Xong</button>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/js/index.js"></script>
+</html>
