@@ -10,5 +10,5 @@ function closeBank() {
 }
 function copyClipboard() {
   const copyText = document.querySelector("#copy").textContent;
-  navigator.clipboard.writeText(copyText);
+  navigator.clipboard.writeText(copyText.replaceAll(" ", ""));
 }
