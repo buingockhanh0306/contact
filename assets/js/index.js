@@ -8,7 +8,8 @@ function closeBank() {
   modal.style.display = "none";
   bank.classList.remove("active");
 }
-function copyClipboard() {
+function copyClipboard(e) {
+  e.preventDefault();
   const copyText = document.querySelector("#copy").textContent;
   navigator.clipboard.writeText(copyText.replaceAll(" ", ""));
 }
