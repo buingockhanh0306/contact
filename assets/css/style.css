@@ -127,7 +127,9 @@ html {
   color: blue;
 }
 .number {
-  color: var(--textColor);
+  -webkit-text-fill-color: var(--textColor);
+  text-decoration: none;
+  -webkit-text-decoration-line: none;
 }
 .qr-img {
   margin-top: 20px;
